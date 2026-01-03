@@ -1,0 +1,66 @@
+group_rank(anl15_bps_s_18_m_pe,industry)*(1-ts_scale(returns,61))
+scale(ts_arg_max(-days_from_last_change(rsk62_beta_1_100_curratio),30),scale=1, longscale=1, shortscale=1)
+-days_from_last_change(fnd3_A_opeexpenses)
+ts_mean(-zscore(power(ts_sum(reverse(last_diff_value(news_session_range_pct, 91)), 20),2)),91)
+ts_sum(reverse(days_from_last_change(anl4_qfd1_az_eps_number)),31)
+-power(last_diff_value(group_neutralize(ts_mean(ts_arg_min(fn_payments_to_acquire_businesses_net_of_cash_acquired_q, 90),1), exchange), 90), 2)
+ts_zscore(signed_power(11/13*ts_arg_min(last_diff_value(-ts_rank(fn_new_shares_issued_a, 110, constant = 0), 160),230) + 7/17, 0.6), 352)
+ts_delay(ts_arg_max(fnd6_newa1v1300_chech, 300),61)
+winsorize(max(-ts_step(fnd6_cptnewqv1300_apq/fnd6_newqv1300_cogsq), -days_from_last_change(fnd6_newa1v1300_chech)),std=5)
+ts_decay_linear(inverse(group_zscore(scale(2/9*min(-ts_count_nans(anl4_totassets_mean,90),ts_zscore(anl4_netprofita_std,90))+3/11, scale=1, longscale=1, shortscale=1),exchange)),39, dense = true)
+signed_power(ts_arg_max(max(-power(ts_mean(-inverse(rank(ts_decay_linear(-ts_count_nans(fnd2_currfrtxexp, 30),10,dense = false),  rate=2)), 1),12), ts_sum(ts_delta(fn_income_taxes_paid_q, 180),80)), 200),7)
+multiply(rank(volume), rank(-ts_step(last_diff_value(winsorize(-9*days_from_last_change(ts_arg_max(max(rank(vec_sum(fnd6_newqeventv110_cibegniq)), rank(vec_sum(fnd6_cptnewqeventv110_ceqq))),150))+1/13, std=0.01), 600))), filter=false)
+multiply(rank(volume) ,rank(scale(signed_power(6/11*sign(group_zscore(-ts_count_nans(ts_regression(ts_count_nans(fnd6_newa2v1300_sale, 10),ts_rank(fnd6_teq, 150,  constant = 0), 90, lag = 0, rettype = 0),90), exchange))+7/9, 5/6), scale=1, longscale=1, shortscale=1)), filter=true)
+ts_decay_linear(group_scale(ts_sum(power(scale(-max(ts_count_nans(fnd6_newa2v1300_sale, 10), ts_rank(fnd6_teq, 150,  constant = 0)), scale=1, longscale=1, shortscale=1),7),90), subindustry),60,dense = true)
+multiply(rank(-returns) ,rank(group_zscore(log(1/7*scale(power(ts_step(-sign(days_from_last_change(ts_count_nans(vec_sum(fnd6_newqeventv110_nrtxtq),120)/ts_scale(vec_avg(fnd6_cptnewqeventv110_atq),90, constant = 0)))),11), scale=1, longscale=1, shortscale=1)+5/6),subindustry)), filter=false)
+log(power(multiply(rank(-low) ,rank(ts_zscore(last_diff_value(anl4_qf_az_div_number,120)*days_from_last_change(vec_sum(fnd6_newqeventv110_tstknq)), 31)), filter=false),2)+1)
+group_zscore(-log(power(-ts_count_nans(-ts_covariance(ts_mean(vec_sum(nws12_mainz_tonlast), 91), ts_quantile(anl4_qfd1_az_hgih_spe, 90, driver="cauchy" ), 210), 5),2)+1), subindustry)
+scale(signed_power(reverse(days_from_last_change(vec_sum(fnd6_newqeventv110_cibegniq)*vec_sum(fnd6_newqeventv110_cibegniq))),3), scale=1, longscale=1, shortscale=1)
+log(power(multiply(rank(-returns), rank(ts_zscore(ts_sum(vec_avg(fnd6_newqeventv110_cibegniq), 120), 130))), 0.834))
+multiply(rank(-returns) , rank(signed_power(-ts_corr(vec_sum(fnd6_newqeventv110_cibegniq), rank(vec_avg(fnd6_newqeventv110_cshiq)),90),0.833)), filter=false)
+-ts_av_diff(rank(low), 8)
+ts_mean(log(subtract(power(anl4_netprofit_flag, 2), -1, filter=true)), 90)
+ts_zscore(signed_power(days_from_last_change(anl4_netprofit_flag), 1/7),90)
+power(ts_arg_max(fn_liab_fair_val_l1_a,180), 2/3)
+reverse(ts_arg_min(ts_corr(last_diff_value(reverse(days_from_last_change(log(anl4_qf_az_dts_spe))), 90), days_from_last_change(fn_liab_fair_val_q), 90), 148))
+ts_mean(multiply(rank(-returns), rank(reverse(ts_arg_max(ts_count_nans(subtract(fnd2_a_ltrmdmrepoplinytwo, anl4_qf_az_dts_spe, filter=false), 200),210))),filter=true), 10)
+ts_mean(ts_delta(multiply(rank(-returns), rank(ts_decay_linear(anl4_bvps_flag, 140, dense = false)*zscore(sqrt(divide(debt, assets)))), filter=true), 90), 90)
+ts_decay_linear(multiply(rank(-returns), rank(ts_decay_linear(anl4_bvps_flag, 150, dense = false)*zscore(sqrt(divide(debt, assets)))), filter=true),40, dense = false)
+ts_decay_linear(reverse(multiply(rank(returns) ,rank(days_from_last_change(reverse(signed_power(anl4_qf_az_dts_spe, 4)))), filter=false)),10, dense = false)
+ts_decay_linear(multiply(rank(-returns), rank(volume/adv20), filter=true), 90, dense = false)
+ts_decay_linear(anl4_bvps_flag, 90, dense = false)
+reverse(days_from_last_change(bookvalue_ps))
+group_scale(ts_sum(
+        sqrt(
+        winsorize(
+            ts_decay_linear(
+                rank(divide(debt_lt, assets) * ts_product(divide(debt, assets), 50) *   
+    ts_delay(anl4_adjusted_netincome_ft, 10)),
+        60,
+        dense=false
+      ), std=4
+    )
+  ), 
+  120
+) * ts_arg_min(anl4_gric_flag, 45), industry)
+group_zscore(zscore(ts_delay(log(anl4_adjusted_netincome_ft) ,90)), industry) * sqrt(divide(debt,assets))
+scale(ts_decay_linear(anl4_adjusted_netincome_ft, 50, dense = false), scale=1, longscale=1, shortscale=1)
+ts_delay(anl4_adjusted_netincome_ft, 40)
+-days_from_last_change(zscore(sqrt(divide(debt, assets))))
+rank(ts_decay_linear(add(
+  group_neutralize(inverse(ts_count_nans(divide(fnd6_newa2v1300_ni, assets), 120)), industry),
+  reverse(days_from_last_change(inverse(group_mean(divide(cashflow_op, fnd6_drlt), 1, industry))))
+), 35, dense=false))
+zscore(scale(winsorize(debt/assets, std=9)*ts_mean(debt/assets, 40)*ts_arg_min(anl4_gric_flag,40), scale=1, longscale=1, shortscale=1))
+zscore(ts_mean(debt/assets, 90))
+ts_delta(ts_count_nans(ts_quantile(income/equity,60) ,60), 60)
+rank(ts_delta(ts_count_nans(sign(cashflow_op / revenue), 60), 30))
+rank(
+  add(
+    group_neutralize(inverse(ts_count_nans(fnd6_newa2v1300_ni/assets, 120)), industry),
+    -days_from_last_change(inverse(group_mean(cashflow_op/revenue, 1, industry)))
+  )
+)
+group_neutralize(inverse(ts_count_nans(fnd6_newa2v1300_ni/assets ,90)), industry)
+-days_from_last_change(inverse(group_mean(cashflow_op/revenue, 1, industry)))
+ts_delta(ts_count_nans(sign(cash/liabilities_curr) ,60), 60)
